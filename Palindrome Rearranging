@@ -1,5 +1,11 @@
 def palindrome_rearranging(s):
   return [s.count(i) % 2 for in set(s)].count(1) == len(s)%2
+  
+THINKINGS: 
+if your str is even length,
+  all your letters must appear an even number of times.
+if your str is odd length, 
+  you must have exactly 1 letter appear an odd number of times.
 
 Explaination
 Doing in Python REPL
