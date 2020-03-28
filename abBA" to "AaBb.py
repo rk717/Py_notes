@@ -17,3 +17,6 @@ def find_children(s):
     return b
             
 print(find_children("abBAdcDC"))
+
+def find_children(pattern):
+    return ''.join(sorted(pattern, key=lambda letter: (letter.upper(), letter.islower())))
