@@ -47,11 +47,21 @@ def g_test():
         n = yield #收到的值 给n
 
         print("receive from outside:", n)
-g = g_test
+g = g_test()
 g.__next__() #调用生成器，同时发送None到Yield
 
 for i in range(10):
     g.send(i) #调用生成器，同时发送i
+    
+#receive from outside: 0
+
+#receive from outside: 1
+
+#receive from outside: 2
+
+.......
+
+#receive from outside: 9
 --------------------------------------------------------------
     
 用生成器实现并发编程
