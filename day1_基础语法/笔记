@@ -1,0 +1,285 @@
+
+
+第1章 Python基础 Day1 基本语法
+
+1.1 编程语言介绍与分类
+	什么是编程语言？
+		本质 上跟人类语言， 目的一样。 沟通
+		电流+一堆硬件
+		高电压1   低电压 0
+		高电压1   低电压 0
+		高电压1   低电压 0 8 晶体管
+
+		0101010101010  play sound
+		10100000     	open file
+
+		机器语言 直接跟硬件打交道
+
+
+		汇编语言  开发效率低
+		0101010101010  <--- play_m
+
+
+		高级语言
+			对底层硬件的各种指令 做了封装
+			play_music("忽然.mp3")
+
+			人类代码  ——翻译———— 》机器语言
+
+			根据翻译方式不同产生了2个流派
+
+			编译型语言
+				人类代码 ————》一次性把代码给 翻译官（编译器）————》汇编--》机器语言
+				代表 ： c,c++,golang
+				优点：执行速度快
+				缺点：跨平台可移植性差
+					硬件  ， cpu , 有自己指令规则  0000000001 打印， 1110000 play music
+						intel ,amd : 复杂指令集 ，高性能高功耗
+						ARM :精简指令集   手机  平板 ， 低功耗
+
+						你的基于intel平台编译出来的程序是没有办法在arm平台上运行
+
+
+					软件，你的c程序想在windows,linux,mac同时可以运行，
+						windows  invoke_window
+						linux,mac  call_window
+
+
+			解释型语言
+				人类代码 ————》边执行边翻译(解释)，陪同翻译(解释器／虚拟机) ————》机器语言
+				代表：python,php,java,ruby,c#
+				优点：跨平台好
+				缺点：翻译需要时间，执行速度 慢
+
+	机器理解的慢， 1ms, 10ms
+	大多数情况下， 语言的快慢是我们人类感知不到的。
+
+
+
+
+
+1.2 Python介绍、发展趋势
+
+	Python发展史
+		Guido 龟叔 ，1989 Python
+		2005 - 2012 谷歌大量使用PY,2013 dropbox
+		2005 豆瓣 Python
+		2009 用python ,
+		2012 云计算，1000 = 1000 ， Openstack Python
+		2012 讲Python, 自动化开发， 不会开发的运维终将被淘汰。
+		2014 AI兴起 ，
+		2017 大众视野
+
+		Java, c, python
+
+
+	主要应该领域
+
+	哪些公司用py
+
+	python 的版本 发展
+
+	python2 or 3?
+
+1.3 Python环境安装
+		Windows
+		mac
+		Linux
+		Unix
+
+
+1.4 开发你的第一个Python程序
+
+
+1.5 选择最好用的PyCharm IDE
+		代码编辑器
+
+1.6 变量
+
+		x + y = 6 公式 调用
+		x =2
+
+		1. 先定义 变量， 存在内存里
+		2. 代码后调用
+	修改
+
+1.7 注释
+
+1.8 基本数据类型
+
+	str Alex 	int 23
+	01001		010101
+
+	数字
+		int 整数
+			2**62
+			type(age) 查看变量的数据类型
+		long 无限大
+		python3里，所有的整数都按int类型处理
+
+		float浮点数 ~ 小数
+			3.14159
+
+		其它语言里必须在声明变量前先定义 好其类型，强类型
+
+		弱类型语言
+
+	字符串
+
+		定义
+			name = "Alex" #有引号就是字符串,
+			"I'm Alex"  'alex "sdds" '
+
+
+		拼接
+
+			>>> s1="我本将心照明月"
+			>>> s2="无奈明月照沟渠"
+			s1+s2
+		段落/多行
+			'''sdf
+				sdfsdfdsf
+			'''
+
+	bool 布尔
+		a = 3
+		b = 5
+
+		b > a  正确/成立    真 True
+		b < a  错误/不成立  假 False
+
+		if today == raining True
+			print(take unbrealla)
+		else False
+			print(不用带)
+
+
+	列表 , 数组
+		Alex Egon OldVillageMaster  Peiqi BlackGirl
+		>>> names
+		['Alex', 'Egon', 'OldTownMaster', 'Peiqi', 'BlackGirl']
+		>>> names[4]
+		'BlackGirl'
+
+		增
+			插入
+				>>> names.insert(4,"Alex")
+				>>> names
+				['Alex', 'Egon', 'OldTownMaster', 'Peiqi', 'Alex', 'BlackGirl']
+
+			追加 , 把元素抛入列表最后面
+				>>> names.append("小强")
+				>>> names
+				['Alex', 'Egon', 'OldTownMaster', 'Peiqi', 'Alex', 'BlackGirl', '小强']
+
+
+		删
+			>>> names[-1]
+			'小强'
+			>>> del names[-1]
+			>>> names
+			['Alex', 'Egon', 'OldTownMaster', 'Peiqi', 'Alex', 'BlackGirl']
+
+		改
+			>>> names
+			['Alex', 'Egon', 'OldTownMaster', 'Peiqi', 'Alex', 'BlackGirl']
+			>>> names[-1]
+			'BlackGirl'
+			>>> names[-1] = "黑姑娘"
+			>>> names
+			['Alex', 'Egon', 'OldTownMaster', 'Peiqi', 'Alex', '黑姑娘']
+		查
+			>>> names
+			['Alex', 'Egon', 'OldTownMaster', 'Peiqi', 'Alex', '黑姑娘']
+			>>>
+			>>>
+			>>> 'Peiqi' in names
+			True
+			>>> 'Peiqi2' in names
+			False
+
+			查到元素的下标并返回
+			>>> names.index("Peiqi")
+			3
+			>>>
+			>>>
+			>>> names.index("Peiqi2")
+			Traceback (most recent call last):
+			  File "<stdin>", line 1, in <module>
+			ValueError: 'Peiqi2' is not in list
+
+		命令嵌套
+			>>> del names[names.index("Peiqi")]
+			>>> names
+			['Alex', 'Egon', 'OldTownMaster', 'Alex', '黑姑娘']
+
+
+	dict , set
+	tuple
+
+1.9 读取用户指令
+	input 方法 接收 到的所有数据 都以字符串的格式处理
+
+1.10 格式化打印
+	  %s 是代表 字符 串
+	  %d 整数
+	  %f 浮点
+
+
+1.11 运算符
+1.12 流程控制之if...else
+
+	单分支
+		today_weather = "sun_day"
+
+		#单分支
+		if today_weather == "rain_day":
+		    print("take your umbrella with you ")
+
+	双分支
+
+		#双分支
+		age_of_oldboy = 58
+		if age_of_oldboy > 50 :
+		    print("Too old, time to retire..")
+		else:
+		    print("还能折腾几年!")
+
+	缩进
+		Python的缩进有以下几个原则:
+
+		顶级代码必须顶行写，即如果一行代码本身不依赖于任何条件，那它必须不能进行任何缩进
+		同一级别的代码，缩进必须一致
+		官方建议缩进用4个空格
+
+	多分支
+
+
+		再来个匹配成绩的小程序吧，成绩有ABCDE5个等级，与分数的对应关系如下
+
+
+		A    90-100
+		B    80-89
+		C    60-79
+		D    40-59
+		E    0-39
+
+		程序启动，提示用户输入分数，根据分数打印等级 。
+
+		猜随机数
+
+
+1.13 流程控制之while循环
+	break # 中止循环
+	continue # 中止本次循环,继续 下次循环
+		count = 0
+		while count < 100:
+		    count += 1
+		    if count > 10 and count < 20:
+		        continue #
+		    print(count)
+
+    dead loop
+
+1.14 本章练习题&作业
+	双色球选购程序
