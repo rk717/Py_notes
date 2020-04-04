@@ -1,7 +1,4 @@
 results = ['1', '2', '3']
-
-results = map(int, results)
-
 >>>results = list(map(int, results))
 
 
