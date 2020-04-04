@@ -9,6 +9,8 @@ def Convert(string):
 # Driver code	 
 str1 = "Geeks for Geeks"
 print(Convert(str1)) 
+---------------------------------------------------------------
+
 
 # Python code to convert string to list 
 def Convert(string): 
