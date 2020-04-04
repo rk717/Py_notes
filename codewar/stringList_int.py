@@ -20,8 +20,18 @@ def Convert(string):
 # Driver code	 
 str1 = "Geeks-for-Geeks"
 print(Convert(str1)) 
+----------------------------------------------------
+
+# Python3 program to Split string into characters 
+def split(word): 
+	return [char for char in word] 
+	
+# Driver code 
+word = 'geeks'
+print(split(word)) 
 
 
+#['g', 'e', 'e', 'k', 's']
 
 
 
