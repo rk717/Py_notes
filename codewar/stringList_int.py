@@ -1,3 +1,18 @@
+reverse a string:
+
+def solution(str):
+	return str[::-1]
+
+----------------------------------
+reverse a list:
+def Reverse(lst): 
+	lst.reverse() 								
+	return lst 
+
+lst = [10, 11, 12, 13, 14, 15] 
+print(Reverse(lst)) 
+
+------------------------------------
 Conver string to a list. 
 
 # Python code to convert string to list 
