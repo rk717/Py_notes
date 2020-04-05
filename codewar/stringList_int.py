@@ -1,3 +1,8 @@
+replace字符
+def DNAtoRNA(dna):
+    return (dna.replace("T", "U"))
+
+-----------------------------------
 反转一句话：
 def reverseWords(s):
     return " ".join(s.split()[::-1])
