@@ -1,3 +1,7 @@
+反转一句话：
+def reverseWords(s):
+    return " ".join(s.split()[::-1])
+---------------------------------
 反转字符串
 reverse a string:
 
