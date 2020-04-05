@@ -1,3 +1,4 @@
+反转字符串
 reverse a string:
 
 def solution(str):
@@ -13,31 +14,29 @@ lst = [10, 11, 12, 13, 14, 15]
 print(Reverse(lst)) 
 
 ------------------------------------
+转换字符串到列表
 Conver string to a list. 
-
-# Python code to convert string to list 
 
 def Convert(string): 
 	li = list(string.split(" ")) 
 	return li 
 
-# Driver code	 
 str1 = "Geeks for Geeks"
-print(Convert(str1)) 
+print(Convert(str1))
+
+#['Geeks', 'for', 'Geeks']
 ---------------------------------------------------------------
-
-
-# Python code to convert string to list 
 def Convert(string): 
 	li = list(string.split("-")) 
 	return li 
 
-# Driver code	 
+
 str1 = "Geeks-for-Geeks"
 print(Convert(str1)) 
+#['Geeks', 'for', 'Geeks']
 ----------------------------------------------------
 
-# Python3 program to Split string into characters 
+字符串变单个字符
 def split(word): 
 	return [char for char in word] 
 	
@@ -51,6 +50,7 @@ print(split(word))
 
 
 ---------------------------------------
+把列表里的 字符串 变成 int
 results = ['1', '2', '3']
 >>>results = list(map(int, results))
 
@@ -62,9 +62,8 @@ results = ['1', '2', '3']
 results = [int(i) for i in results]
 
 ------------------------------------------
-How to print list in python??
-# Python program to print list 
-# using for loop 
+如何打印list
+
 a = [1, 2, 3, 4, 5] 
 
 # printing the list using loop 
@@ -72,8 +71,7 @@ for x in range(len(a)):
 	print a[x]
 	
 ----------------------------------------------
-# Python program to convert a list 
-# of character 
+把字符变成list
 
 def convert(s): 
 
@@ -95,9 +93,7 @@ print(convert(s))
 #geeksforgeeks
 
 ----------------------------------------------------------------------------
-# Python program to convert a list 
-# of character 
-
+把字符变成list
 def convert(s): 
 
 	# initialization of string to "" 
