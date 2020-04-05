@@ -113,3 +113,11 @@ print(convert(s))
 
 #geeksforgeeks
 
+---------------------------------------------------------------------------------
+把列表里的字符串变成字符串 
+test.assert_equals(smash(["hello"]), "hello")
+test.assert_equals(smash(["hello", "world"]), "hello world")
+
+def smash(words):
+    return " ".join(words)
+
