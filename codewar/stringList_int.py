@@ -54,5 +54,47 @@ a = [1, 2, 3, 4, 5]
 
 # printing the list using loop 
 for x in range(len(a)): 
-	print a[x], 
+	print a[x]
+	
+----------------------------------------------
+# Python program to convert a list 
+# of character 
+
+def convert(s): 
+
+	# initialization of string to "" 
+	new = "" 
+
+	# traverse in the string 
+	for x in s: 
+		new += x 
+
+	# return string 
+	return new 
+	
+	
+# driver code 
+s = ['g', 'e', 'e', 'k', 's', 'f', 'o', 'r', 'g', 'e', 'e', 'k', 's'] 
+print(convert(s)) 
+
+#geeksforgeeks
+
+----------------------------------------------------------------------------
+# Python program to convert a list 
+# of character 
+
+def convert(s): 
+
+	# initialization of string to "" 
+	str1 = "" 
+
+	# using join function join the list s by 
+	# separating words by str1 
+	return(str1.join(s)) 
+	
+# driver code 
+s = ['g', 'e', 'e', 'k', 's', 'f', 'o', 'r', 'g', 'e', 'e', 'k', 's'] 
+print(convert(s)) 
+
+#geeksforgeeks
 
