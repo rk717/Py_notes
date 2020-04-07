@@ -21,3 +21,39 @@ tests = (
 
 for test, expected in tests:
     print(f'Testing: "{test}"; Expected: {expected}; Received: {max_repeat(test)}')
+    
+    
+---------------------------------------------------------------------------------------
+检查一串字符串里是否有重复字母
+is_isogram("Dermatoglyphics" ) == true
+is_isogram("aba" ) == false
+is_isogram("moOse" ) == false # -- ignore letter case
+
+
+
+
+def is_isogram(string):
+    return len(string) == len(set(string.lower()))
+
+---------------------------------------------------
+def is_isogram(string):
+    string = string.lower()
+    for letter in string:
+        if string.count(letter) > 1: return False
+    return True
+-----------------------------------------------------
+def is_isogram(string):
+    #your code here
+    word = [char for char in string]
+    word = [x.lower() for x in string]
+    cnt = 0
+    for i in range(len(word)):
+        for j in word[i+1:]:
+            if word[i] == j:
+                cnt += 1
+    if cnt > 0:
+        return False
+    else:
+        return True
+
+print(is_isogram("aba"))
