@@ -135,3 +135,14 @@ list_1 = [ 'asdada', 1, 123131.131, 'blaa adaraerada', 0.000001, 34.12451235265,
 import operator
 filter(operator.isNumberType, list_1
 
+       
+       
+       
+------------------------------------------------------------------
+查询一个stirng里有多少个特定的 char
+strCount('Hello', 'o') // => 1
+strCount('Hello', 'l') // => 2
+strCount('', 'z')      // => 0
+       
+def strCount(string, letter):
+    return string.count(letter)
