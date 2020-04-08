@@ -146,3 +146,24 @@ strCount('', 'z')      // => 0
        
 def strCount(string, letter):
     return string.count(letter)
+
+       
+--------------------------------------------------------------------
+将数字字符串转化成 integer
+
+test_list = ['1', '4', '3', '6', '7'] 
+for i in range(0, len(test_list)): 
+	test_list[i] = int(test_list[i]) 
+       
+----------------------------------------------------
+test_list = [int(i) for i in test_list] 
+       
+-----------------------------------------------------
+test_list = list(map(int, test_list)) 
+	
+
+
+
+	
+
+
