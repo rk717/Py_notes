@@ -125,4 +125,13 @@ test.assert_equals(smash(["hello", "world"]), "hello world")
 
 def smash(words):
     return " ".join(words)
+---------------------------------------------------------------------------------
+一串列表里只pick数字
+[s for s in myList if s.isdigit()]
+
+
+-----------------------------------------
+list_1 = [ 'asdada', 1, 123131.131, 'blaa adaraerada', 0.000001, 34.12451235265, 'stackoverflow is awesome' ]
+import operator
+filter(operator.isNumberType, list_1
 
