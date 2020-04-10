@@ -22,3 +22,14 @@ dumps 生成序列化的字符串
 
 load 从文件加载
 loads 把序列化的字符串反向解析
+
+
+pickle vs json
+
+    pickle 
+    只支持 python
+    支持python里的所有数据类型
+
+    json
+    所有语言都支持
+    只支持常规数据类型 str， int， dict set list， tuple
