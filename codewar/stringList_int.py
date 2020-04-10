@@ -172,10 +172,11 @@ test_list = list(map(int, test_list))
        
 def countBits(n):
     return bin(n).count("1")
-	
-
-
-
-	
-
-
+       
+------------------------------------------------------------------
+让一个数组里的数全部各自相乘
+def multiplyList(myList) : 
+    result = 1
+    for x in myList: 
+         result = result * x  
+    return result  
