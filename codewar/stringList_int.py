@@ -13,7 +13,13 @@ reverse a string:
 def solution(str):
 	return str[::-1]
 
+str = 'Python' 
+reversed=''.join(reversed(str)) 
+# .join() method merges all of the characters resulting from the reversed iteration into a new string
+
+
 ----------------------------------
+反转列表
 reverse a list:
 def Reverse(lst): 
 	lst.reverse() 								
