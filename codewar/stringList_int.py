@@ -152,7 +152,21 @@ strCount('', 'z')      // => 0
        
 def strCount(string, letter):
     return string.count(letter)
+       
+------------------------------------------------------------------
+查询一个list里有没有一个特定的element
 
+       def check(seq, elem):
+    for i in seq:
+        if i == elem:
+            return True
+    return False
+
+print(check([101, 45, 75, 105, 99, 107], 107))
+
+       
+def check(seq, elem):
+    return elem in seq
        
 --------------------------------------------------------------------
 将数字字符串转化成 integer
