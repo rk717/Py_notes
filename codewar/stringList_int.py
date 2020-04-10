@@ -166,6 +166,12 @@ test_list = [int(i) for i in test_list]
        
 -----------------------------------------------------
 test_list = list(map(int, test_list)) 
+       
+---------------------------------------------------------------------
+数出字符串里面有几个 “1”
+       
+def countBits(n):
+    return bin(n).count("1")
 	
 
 
