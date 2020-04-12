@@ -20,7 +20,7 @@ class Person:
     
     def walk_dog(self, dog_obj):
         #遛狗
-        print("主人[%s]带狗[%s]" %s(self.name, dog_obj.name))
+        print("主人[%s]带狗[%s]" %(self.name, dog_obj.name))
 
 
 p1 = Person("Alex", 25, "M")
