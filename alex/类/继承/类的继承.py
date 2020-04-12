@@ -32,3 +32,11 @@ d = Dog("Mjj", 3, "Female")
 d.eat()
 d.chase_rabbit()
 print(d.a_type)
+
+
+/*
+person Lin is talking...
+哺乳动物
+Mjj is eating...
+Mjj is chasing the rabbit...
+*/
