@@ -17,6 +17,7 @@ class Person(Animal):
     def talk(self):
         print("person %s is talking..." % self.name)
     def eat(self):
+        Animal.eat(self)
         print("Human is eating ")
 
 class Dog(Animal):
@@ -35,8 +36,11 @@ print(d.a_type)
 
 
 /*
+Lin is eating...
+Human is eating
 person Lin is talking...
-哺乳动物
+高等动物
 Mjj is eating...
 Mjj is chasing the rabbit...
+哺乳动物
 */
