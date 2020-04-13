@@ -204,3 +204,28 @@ def multiplyList(myList) :
     for x in myList: 
          result = result * x  
     return result  
+       
+----------------------------------------------------------------------
+把一串字符串 转化 成 “（” 和 “）”， 如果字母出现一次，用‘（’， 出现多次 用 ‘）’ ， 大写字母不参与 count
+def duplicate_encode(word):
+    """a new string where each character in the new string is '(' 
+    if that character appears only once in the original word, or ')' 
+    if that character appears more than once in the original word. 
+    Ignores capitalization when determining if a character is a duplicate. """
+    word = word.upper()
+    result = ""
+    for char in word:
+        if word.count(char) > 1:
+            result += ")"
+        else:
+            result += "("
+            
+    return result
+-----------------------------------
+def duplicate_encode(word):
+	return "".join(["("if word.lower().count(c) == 1 else ")" for c in word.lower() ] )
+       
+Test.assert_equals(duplicate_encode("din"),"(((")
+Test.assert_equals(duplicate_encode("recede"),"()()()")
+Test.assert_equals(duplicate_encode("Success"),")())())","should ignore case")
+Test.assert_equals(duplicate_encode("(( @"),"))((")
