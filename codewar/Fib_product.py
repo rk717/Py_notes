@@ -1,3 +1,5 @@
+求哪两个fib数相乘等于 n
+
 test.assert_equals(productFib(4895), [55, 89, True])
 test.assert_equals(productFib(5895), [89, 144, False])
 --------------------------------------------------------------
@@ -45,3 +47,18 @@ def productFib(prod):
 
 
 print(productFib(4895))
+
+-------------------------------------------------
+求fib数 的 和
+
+def sum_fib(m):
+    
+    fibo = [0] * (m+1)
+    fibo[1] = 1
+
+    sm = fibo[0] + fibo[1]
+
+    for i in range (2, m+1):
+        fibo[i] = fibo[i-1] + fibo[i-2]
+        sm += fibo[i]
+    return sm
