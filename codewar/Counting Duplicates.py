@@ -57,3 +57,16 @@ def is_isogram(string):
         return True
 
 print(is_isogram("aba"))
+
+-------------------------------------------------------
+把 单词 放到 字典里 数字母
+
+def string_letter_count(s):
+    counts = {}
+    for char in s.lower():
+        counts[char] = counts.get(char, 0) + 1
+    return counts
+
+print(string_letter_count("hello"))
+
+#{'h': 1, 'e': 1, 'l': 2, 'o': 1}
