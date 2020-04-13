@@ -1,3 +1,13 @@
+删除 字符串里的大写字母
+def duplicate_encode(word):
+    #your code here
+    s = ''.join(ch for ch in word if not ch.isupper())
+    return s
+
+print(duplicate_encode("Hello"))
+#ello
+
+---------------------------------
 replace字符
 def DNAtoRNA(dna):
     return (dna.replace("T", "U"))
