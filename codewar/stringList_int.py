@@ -1,3 +1,15 @@
+字符串去除重复
+mylist = ["a", "b", "a", "c", "c"]
+mylist = list(dict.fromkeys(mylist))
+#["a", "b", "c"]
+
+def longest(a1, a2):
+    return "".join(sorted(set(a1 + a2)))
+
+def longest(s1, s2):
+    return ''.join(sorted(set(s1).union(s2)))
+
+--------------------------------------
 删除 字符串里的大写字母
 def duplicate_encode(word):
     #your code here
