@@ -1,3 +1,13 @@
+判断是不是密码
+validate_pin("1234") == True
+validate_pin("12345") == False
+validate_pin("a234") == False
+
+def validate_pin(pin):
+    return len(pin) in (4, 6) and pin.isdigit()
+
+validate_pin = lambda pin: len(pin) in [4,6] and pin.isdigit()
+--------------------------------------
 把一串字符串转换成 ‘#’ ， 只保留最后 4 位
 def maskify(cc):
     return "#"*(len(cc)-4) + cc[-4:]
