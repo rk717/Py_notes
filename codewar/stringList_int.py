@@ -1,3 +1,10 @@
+把一串字符串转换成 ‘#’ ， 只保留最后 4 位
+def maskify(cc):
+    return "#"*(len(cc)-4) + cc[-4:]
+maskify(     "64607935616") ==      "#######5616"
+
+
+------------------------------------
 字符串去除重复
 mylist = ["a", "b", "a", "c", "c"]
 mylist = list(dict.fromkeys(mylist))
