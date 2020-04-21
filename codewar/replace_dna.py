@@ -36,3 +36,11 @@ TABLE = string.maketrans('ATCG', 'TAGC')
 
 def DNA_strand(dna):
     return dna.translate(TABLE)
+===================================================================
+将一个字符串的大写换成小写，小写换成大写
+"hello world".toAlternatingCase() === "HELLO WORLD"
+"HELLO WORLD".toAlternatingCase() === "hello world"
+
+def to_alternating_case(string):
+    return string.swapcase()
+
