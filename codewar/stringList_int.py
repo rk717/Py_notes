@@ -41,6 +41,18 @@ replace字符
 def DNAtoRNA(dna):
     return (dna.replace("T", "U"))
 
+replace 一个字符串的数组
+def song_decoder(song):
+    song = song.split('WUB')
+    original_song = []
+    for i in song:
+        if i != '':
+            original_song += [i]
+    return ' '.join(original_song)
+
+print(song_decoder("AWUBBWUBC"))
+#A B C
+
 -----------------------------------
 反转一句话：
 def reverseWords(s):
