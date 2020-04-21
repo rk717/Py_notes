@@ -70,3 +70,26 @@ def string_letter_count(s):
 print(string_letter_count("hello"))
 
 #{'h': 1, 'e': 1, 'l': 2, 'o': 1}
+
+------------------------------------------------------
+去除一个 数组/字符串 的 多余字符
+unique_in_order('AAAABBBCCDAABBB') == ['A', 'B', 'C', 'D', 'A', 'B']
+unique_in_order('ABBCcAD')         == ['A', 'B', 'C', 'c', 'A', 'D']
+unique_in_order([1,2,2,3,3])       == [1,2,3]
+
+def unique_in_order(iterable):
+    result = []
+    prev = None
+    for char in iterable[0:]:
+        if char != prev:
+            result.append(char)
+            prev = char
+    return result
+
+---------------------------------------
+def unique_in_order(iterable):
+    newList = []
+    for item in iterable:
+        if len(newList) < 1 or not item == newList[len(newList) - 1]:
+            newList.append(item)
+    return newList
