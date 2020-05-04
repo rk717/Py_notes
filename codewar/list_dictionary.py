@@ -28,3 +28,13 @@ def top3(products, amounts, prices):
 print(top3(["Computer", "Cell Phones", "Vacuum Cleaner"], [3,24,8], [199,299,399]))
 
 #["Cell Phones", "Vacuum Cleaner", "Computer"]
+
+
+#############################################################
+如何返回一个 字典 列表， how to return a dictionary list
+def namelist(names):
+    namelist = [name['name'] for name in names]
+    return namelist
+
+print(namelist([{'name': 'Bart'},{'name': 'Lisa'},{'name': 'Maggie'}]))
+#['Bart', 'Lisa', 'Maggie']
