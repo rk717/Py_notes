@@ -104,7 +104,7 @@ print(Convert(str1))
 
 字符串变单个字符
 def split(word): 
-	return [char for char in word] 
+	return [char for char in word]         # list(world)
 	
 # Driver code 
 word = 'geeks'
