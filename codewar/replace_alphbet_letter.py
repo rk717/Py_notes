@@ -60,3 +60,27 @@ def alphabet_position(text):
         if x in alphabet:
             inds.append(alphabet[x])
     return ' '.join(([str(x) for x in inds]))
+#########################################################
+返回最大数的单词， return the highest word 
+'''
+take me to semynak
+37   18 35 88
+'''
+import string
+values = dict(zip(string.ascii_lowercase, range(1, 27)))
+
+
+def get_value(word):
+    """Return word letter score."""
+    return sum(values[letter] for letter in word)
+
+
+def high(word_sequence):
+    """
+    Return word with the highest score assuming word_sequence a 
+    string of words separated by space.
+    """
+    return max(word_sequence.split(), key=get_value)
+
+print(high('take me to semynak'))
+#semynak
